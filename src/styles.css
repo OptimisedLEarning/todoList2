@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container{
+    display: flex;
+    
+    height: auto;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    max-width: 700px;
+    margin: auto;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#taskInput{
+    grid-area: header;
+}
+#priorityInput{
+    grid-area: sidebar;
+    
+
+}
+#dueDate{
+    grid-area: main;
+}
+#dueDate{
+    grid-area: main;
+}
+#addButton{
+    grid-area: footer;
+}
+
+
+
+.input-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); ;
+    grid-template-areas: 
+    "header header header"
+    "sidebar sidebar main"
+    " footer footer footer";
+
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-area input:focus{
+    border-color: #007BFF;
+    outline: none;
+}
+.input-area button{
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.input-area button:hover{
+    background-color: #0056b3;
+}
+
+.delete-button{
+    background-color: #dc3545;
+}
+
+
+.taskListHeader{
+    display: flex;
+   
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #333;
+    font-size: .8rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #787676;
+    
+}
+
+
+
+
+
+li{
+    list-style:lower-greek;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+   
+    
+ 
+}
+
+.task-item{
+    
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #333;
+    font-size: .6rem;
+}
+
+
+
+
+.task_name{
+    
+    
+    width: 150px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.task-priority{
+    
+    
+    width: 47px;
+    display: flex;
+    align-items: center;
+   
+    text-overflow: ellipsis;
+
+}
+
+
+
+
+
+
+
+
